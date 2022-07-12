@@ -82,7 +82,7 @@ function App() {
             )}
             <div className="grid">
               {itemArray.map((item, index) => (
-                <Card color="warning" onClick={() => { changeItem(index); console.log(winMessage) }}>
+                <Card color="warning" key={index} onClick={() => { changeItem(index); console.log(winMessage) }}>
                   <CardBody className="box">
                     <Icon name={item} />
                   </CardBody>
